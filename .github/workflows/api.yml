@@ -65,7 +65,7 @@ jobs:
     needs: dockerBuildPush
     environment:
       name: prod
-      url: https://tead-api.azurewebsites.net/
+      url: https://i2tohwz5cxyui-api.azurewebsites.net/
     
     steps:
     - uses: actions/checkout@v4
