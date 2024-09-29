@@ -127,7 +127,7 @@ resource searchService 'Microsoft.Search/searchServices@2023-11-01' = {
   name: searchServiceName
   location: location
   sku: {
-    name: 'standard'
+    name: 'free'
   }
 }
 
