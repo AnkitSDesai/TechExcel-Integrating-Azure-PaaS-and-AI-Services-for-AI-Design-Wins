@@ -26,7 +26,7 @@ param restore bool = false
 param apimPublisherEmail string = 'support@contososuites.com'
 
 var apiManagementServiceName = '${uniqueString(resourceGroup().id)}-apim'
-var apimSku = 'Developer'
+var apimSku = 'Basicv2'
 var apimSkuCount = 1
 var apimPublisherName = 'Contoso Suites'
 
@@ -70,6 +70,7 @@ resource cosmosDbAccount 'Microsoft.DocumentDB/databaseAccounts@2023-04-15' = {
     }
     databaseAccountOfferType: 'Standard'
     locations: locations
+    disableLocalAuth: false
   }
 }
 
