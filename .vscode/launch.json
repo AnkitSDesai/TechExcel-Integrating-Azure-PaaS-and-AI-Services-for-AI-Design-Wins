@@ -6,6 +6,18 @@
         "type": "coreclr",
         "request": "attach",
         "processId": "${command:azureFunctions.pickProcess}"
-      }
+      },
+      {
+        "name": "Python:Streamlit",
+        "type": "debugpy",
+        "request": "launch",
+        "module": "streamlit",
+        "args": [
+             "run",
+             "${file}",
+             "--server.port",
+             "5050"
+        ]
+    }
     ]
   }
